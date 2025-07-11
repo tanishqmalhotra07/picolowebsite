@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   description: 'Supercharge Your Workflow with AI Precision.',
 };
 
+
 export default function RootLayout({
   children,
 }: {
