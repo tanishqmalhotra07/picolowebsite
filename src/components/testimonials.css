@@ -1,0 +1,62 @@
+/* Testimonial container */
+.testimonial-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Testimonial track */
+.testimonial-track {
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+  transform: translateZ(0);
+  will-change: transform;
+  transition: transform 0.8s linear;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+}
+
+.gradient-shadow {
+  position: relative;
+}
+
+.gradient-shadow::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: inherit;
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: inherit;
+}
+
+/* Testimonial card styling */
+.testimonial-card {
+  flex: 0 0 auto;
+  width: 85vw;
+  padding: 12px;
+  transform: translateZ(0);
+  pointer-events: auto;
+}
+
+/* Responsive card widths */
+@media (min-width: 640px) {
+  .testimonial-card {
+    width: 45vw;
+    padding: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    width: 30vw;
+  }
+}
+
+/* Remove fade effect on edges */
